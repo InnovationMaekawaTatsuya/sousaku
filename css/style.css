@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+html {
+    font-size : 100%;
+}
+body {
+    background-color : #e6e2d7;
+    color            : black;
+    font-family      : 'Noto Serif JP', serif;
+}
+li {
+    list-style : none;
+}
+a {
+    text-decoration : none;
+    color           : black;
+}
+.wrapper {
+    max-width : 64rem;
+    width     : 100%;
+    margin    : 0 auto;
+    padding   : 0 1.25rem;
+}
+.section-title .ja {
+    letter-spacing : 0.1rem;
+    font-size      : 2.25rem;
+    font-weight    : 400;
+}
+.section-title .en {
+    font-size : 0.875rem;
+} 
+/*------------------------------------------ 
+PC
+-------------------------------------------*/
+/* ヘッダー */
+#header {
+    position            : relative;
+    background-image    : url(../img/mainvisual-pc.jpg);
+    background-position : center top;
+    background-size     : cover;
+    background-repeat   : no-repeat;
+    width               : 100%;
+    height              : 100vh;
+    margin-bottom       : 11.25rem;
+    padding             : 3.75rem 5rem;
+}
+#header .flex {
+    display         : flex;
+    align-items     : flex-start;
+    flex-direction  : row-reverse;
+}
+#header nav .menu {
+    display     : flex;
+    gap         : 1.5625rem;
+    font-weight : 700;
+}
+#header nav .menu li a {
+    color        : white;
+    writing-mode : vertical-rl;
+}
+#header .flex .site-title {
+    margin-left : 3.75rem;
+}
+#header .flex .site-title img {
+    width : 2.5rem;
+}
+#header .store-link {
+    position   : absolute;
+    bottom     : 1.875rem;
+    left       : 2.5rem;
+    padding    : 0.5rem;
+    background : rgba(255,255,255,0.2);
+}
+#header .store-link a {
+    padding      : 1.875rem 1.125rem;
+    border       : 1px solid white;
+    writing-mode : vertical-rl;
+    color        : white;
+}
+
+/* メイン */
+#news {
+    margin-bottom   : 11.25rem;
+    display         : flex;
+    flex-direction  : row-reverse;
+}
+#news .section-title {
+    writing-mode : vertical-rl;
+}
+#news .section-title span {
+    display : flex;
+}
+
+/* 本質的にはリストの役割を担う要素の為、dlはふさわしくない */
+/* #news .list {
+    writing-mode : vertical-rl;
+    margin : 5rem 6.25rem 0 0;
+}
+#news .list dt {
+    padding : 0.9375rem 1.875rem 0.9375rem 0;
+    border-right : 1px solid black;
+}
+#news .list dd {
+    padding : 0.9375rem 0 0.9375rem 1.875rem;
+}
+#news .list dd:last-child {
+    border-left : 1px solid black;
+} */
+#news .news-list {
+    display        : flex;
+    padding-top    : 80px;
+    padding-right  : 100px;
+}
+#news .news-list li:first-child {
+    border-left : 1px solid black;
+}
+#news .news-list li {
+    display        : flex;
+    flex-direction : row-reverse;
+    padding        : 15px 30px;
+    border-right   : 1px solid black;
+}
+#news .news-list time,
+#news .news-list .ja {
+    writing-mode : vertical-rl;
+}
+
+#new-values {
+    display        : flex;
+    flex-direction : row-reverse;
+    margin-bottom  : 11.25rem;
+}
+#new-values .section-title {
+    writing-mode : vertical-rl;
+    margin-left  : 1.25rem;
+}
+#new-values .img-area {
+    position   : relative;
+    width      : 65%;
+    margin-top : 6.25rem;
+}
+#new-values .img-area img {
+    max-width : 100%;
+}
+#new-values .text-area {
+    position         : absolute;
+    left             : -1.25rem;
+    bottom           : -1.25rem;
+    width            : 56%;
+    padding          : 3.125rem 0;
+    text-align       : center;
+    color            : white;
+    background-color : rgba(249, 233, 6, 0.6);
+}
+#science-technology {
+    display        : flex;
+    margin-bottom  : 11.25rem;
+}
+#science-technology .section-title {
+    writing-mode : vertical-rl;
+    margin-right : 1.25rem;
+}
+#science-technology .img-area {
+    position   : relative;
+    width      : 65%;
+    margin-top : 6.25rem;
+}
+#science-technology .img-area img {
+    max-width : 100%;
+}
+#science-technology .text-area {
+    position         : absolute;
+    right            : -1.25rem;
+    bottom           : -1.25rem;
+    width            : 56%;
+    padding          : 3.125rem 0;
+    text-align       : center;
+    color            : white;
+    background-color : rgba(149, 42, 38, 0.6);
+}
+#guidance .map-area {
+    width : 100%;
+}
+#guidance .map-area iframe {
+    width : 100%;
+}
+
+/* フッター */
+#footer {
+    padding          : 5rem 5rem 1.875rem 1.875rem;
+    background-color : black;
+    color            : white;
+}
+#footer .contents {
+    display         : flex;
+    justify-content : space-between;
+    flex-direction  : row-reverse;
+    margin-bottom   : 0.625rem;
+}
+#footer .contents .right {
+    display        : flex;
+    flex-direction : row-reverse;
+    gap            : 3.75rem;
+}
+#footer .contents .right .site-title {
+    width : 2.5rem;
+}
+#footer .contents .right .site-title img {
+    max-width : 100%;
+}
+#footer .contents .right .menu {
+    display        : flex;
+    flex-direction : column;
+    writing-mode   : vertical-rl;
+}
+#footer .contents .left .menu{
+    display        : flex;
+    writing-mode   : vertical-rl;
+}
+#footer .contents .right .menu:last-child {
+    gap : 1.5625rem;
+}
+#footer .contents .right .info-menu {
+    line-height : 2;
+}
+#footer .contents .right .menu li a {
+    color : white;
+}
+#footer .contents .left .menu li a {
+    color : white;
+}
+#footer .contents .left .menu li:first-child::after {
+    writing-mode : vertical-rl;
+    content      : "｜";
+    margin       : 0.3125rem 0;
+}
+#footer .contents .left .menu li a {
+    color     : white;
+    font-size : 0.875rem;
+}
+#footer .copyright {
+    text-align : center;
+    font-size  : 0.625rem;
+}
+
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 48rem) {
+    .section-title .ja {
+        letter-spacing : 0.1rem;
+        font-size      : 1.75rem;
+    }
+    /* ヘッダー */
+    #header {
+        padding       : 1.25rem;
+        margin-bottom : 5rem;
+    }
+    #header nav .menu {
+        flex-direction : row-reverse;
+    }
+    #header .store-link {
+        bottom     : 1.25rem;
+        left       : 1.25rem;
+    }
+
+    /* メイン */
+    #news {
+        margin-bottom : 5rem;
+    }
+
+    /* 不採用　本質的なリストであるためdlはふさわしくないから */
+    /* #news .list {
+        margin : 1.25rem 1.875rem 0 0;
+    }
+    #news .list dt {
+        padding : 0.9375rem 0.75rem 0.9375rem 0;
+    }
+    #news .list dd {
+        padding : 0.9375rem 0 0.9375rem 0.75rem;
+    }
+    #news .list dd:nth-of-type(3) {
+        border-left: solid 1px #000;
+    }
+    #news .list dt:nth-of-type(n + 4),
+    #news .list dd:nth-of-type(n + 4) {
+        display: none;
+    } */
+
+    
+    #news .news-list {
+        padding-top    : 20px;
+        padding-right  : 30px;
+    }
+    #news .news-list li {
+        padding : 15px 12px 15px 5px;
+    }
+    #news .news-list .none {
+        display : none;
+    }
+    #new-values,
+    #science-technology {
+        margin-bottom : 5rem;
+    }
+    #introduction .section-title .en {
+        display : none;
+    }
+    #new-values .img-area {
+        width      : 90%;
+        margin-top : 4.375rem;
+    }
+    #new-values .section-title {
+        margin-left : 0;
+    }
+    #science-technology .section-title {
+        margin-right : 0;
+    }
+    #science-technology .img-area {
+        width      : 90%;
+        margin-top : 4.375rem;
+    }
+    #new-values .text-area {
+        width            : 64%;
+        padding          : 1.875rem 0;
+    }
+    #science-technology .text-area {
+        width            : 64%;
+        padding          : 1.875rem 0;
+    }
+    #new-values .section-title .ja,
+    #science-technology .section-title .ja {
+        font-size      : 1.5rem;
+    }
+
+    /* フッター */
+    #footer {
+        padding : 2.5rem 1.25rem 1.875rem 1.25rem;
+    }
+    #footer .contents .right {
+        gap : 1.5625rem;
+    }
+    #footer .contents .right .menu {
+        font-size : 0.875rem;
+    }
+    #footer .contents .right .menu:last-child {
+        gap : 0.625rem;
+    }
+}
