@@ -120,7 +120,7 @@ PC
     padding        : 15px 30px;
     border-right   : 1px solid black;
 }
-#news .news-list .time,
+#news .news-list time,
 #news .news-list .ja {
     writing-mode : vertical-rl;
 }
